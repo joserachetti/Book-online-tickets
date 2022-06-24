@@ -66,6 +66,7 @@ curl --location --request GET 'localhost:3000/booking/62b520f806f7e840d32d8d20'
 
 |          Name | Required |  Type   | Description                                                                                                                                                           |
 | -------------:|:--------:|:-------:| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     `id` | required | MongoID  | Booking ID.  
 |     `name` | optional | string  | User Name.                                                                     
 |     `email` | optional | string  | User Email.   
 |     `origin` | optional | string  | Origin of the trip.   
