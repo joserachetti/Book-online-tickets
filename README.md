@@ -80,7 +80,8 @@ curl --location --request GET 'localhost:3000/booking/62b520f806f7e840d32d8d20'
 curl --location --request PUT 'localhost:3000/update_booking' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'id=62b520f806f7e840d32d8d20' \
---data-urlencode 'origin=Durazno'
+--data-urlencode 'origin=Durazno' \
+--data-urlencode 'duration=150'
 ```
  ___
   
