@@ -6,6 +6,7 @@ API-REST (NODE-EXPRESS-MONGOOSE)
 
 Run the `npm i` command and create the `.env` file in the root of the project.
 
+To turn on the server run the command `nodemon server`.
 
 Attention: I recommend trying this project on [POSTMAN](https://www.postman.com/).
 
