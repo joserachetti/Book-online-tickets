@@ -31,16 +31,12 @@ router.put('/update_booking', async (req, res) => {
             omitUndefined: true
         }, );
 
-        if (update) {
-            return res.status(200).json({
-                result: update,
-            });
+        update ? res.status(200).json({
+            result: update,
+        }) : res.status(404).json({
+            message: 'Not Found',
+        });
 
-        } else {
-            return res.status(404).json({
-                message: 'Not Found',
-            });
-        }
 
     } catch (error) {
         console.error(error);

@@ -15,7 +15,6 @@ router.post('/create_booking', async (req, res) => {
   let duration = body.duration;
 
 
-
   let booking = new Booking({
 
     name: name,
@@ -27,18 +26,11 @@ router.post('/create_booking', async (req, res) => {
 
   });
 
-
   try {
 
     let save = await booking.save();
 
-    if (save) {
-      return res.status(200).json({
-
-        result: save,
-      });
-    }
-
+    if (save) res.status(200).json({ result: save});
 
   } catch (error) {
     console.error(error);
@@ -47,7 +39,6 @@ router.post('/create_booking', async (req, res) => {
 
 
 });
-
 
 
 module.exports = router;

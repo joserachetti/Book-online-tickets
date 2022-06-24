@@ -1,17 +1,19 @@
-const dotenv=require('dotenv').config()
-const mongoose = require('mongoose');
+const dotenv = require('dotenv').config()
 
- // =========================
- //          PORT
- // =========================
+// =========================
+//          PORT
+// =========================
 
- const port = 3000;
+const port = 3000;
 
- // =========================
- //        DATABASE
- // =========================
+// =========================
+//        DATABASE
+// =========================
 
- const dbUrl = process.env.DBURL;
+const dbUrl = process.env.DBURL;
 
- 
- module.exports ={ port,dbUrl};
+
+module.exports = {
+    port,
+    dbUrl
+};

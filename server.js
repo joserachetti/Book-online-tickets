@@ -29,7 +29,7 @@ try {
 
 app.listen(port, (error) => {
 
-    error => console.error(error)
+    if(error) console.error(error);
 
     console.log(`Server on port ${ port }`);
 

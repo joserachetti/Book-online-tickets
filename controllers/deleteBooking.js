@@ -11,31 +11,19 @@ router.delete('/delete_booking', async (req, res) => {
 
         let result = await Booking.findByIdAndDelete(id);
 
-        if (result) {
+        result ? res.status(200).json({
+            message: 'Booking Deleted'
+        }) : res.status(404).json({
+            message: 'Not Found',
+        });
 
-            return res.status(200).json({
-                message: 'Booking Deleted',
-            });
 
-        } else {
-
-            return res.status(404).json({
-                message: 'Not Found',
-            });
-
-        }
 
     } catch (error) {
-
         console.error(error);
         return res.status(500).send('serverError');
-
     }
 
-
-
 });
-
-
 
 module.exports = router;
