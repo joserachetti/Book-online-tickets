@@ -30,12 +30,11 @@ let bookingSchema = new Schema({
     },
 
 
-},
-{versionKey: false});
+});
 
 
 
-bookingModel=mongoose.model('Booking', bookingSchema);
+bookingModel=mongoose.model('booking', bookingSchema);
 
 
 
