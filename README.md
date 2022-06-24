@@ -54,7 +54,7 @@ curl --location --request GET 'localhost:3000/booking/62b520f806f7e840d32d8d20'
 --data-urlencode 'email=email@email.com' \
 --data-urlencode 'origin=Punta del Este' \
 --data-urlencode 'destination=Montevideo' \
---data-urlencode 'departure=2012-01-26T13:51:50.417-07:00' \
+--data-urlencode 'departure=2022-01-26T13:51:50.417-07:00' \
 --data-urlencode 'duration=60'
 ```
  
